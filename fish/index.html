@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading...</title>
+</head>
+<body style="background-color: #121212; color: white; font-family: sans-serif; text-align: center; padding-top: 20vh;">
+    <p>Loading your surprise...</p>
+    <p id="ui" style="display:none;">If you aren't redirected, <a id="btn" href="#" style="color: #1DB954;">click here</a>.</p>
+    <script>
+        const target = "https://sites.google.com/view/kate-monnin/home";
+        document.getElementById('btn').href = target;
+        document.getElementById('ui').style.display = 'block';
+        window.location.replace(target);
+    </script>
+</body>
+</html>
